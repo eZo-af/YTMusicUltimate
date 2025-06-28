@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs: 
       ipa_url:
-        description: "URL to the decrypted IPA file"
+        description: "https://www.dropbox.com/scl/fi/oxwan581341u99j590y44/YTMusic.ipa?rlkey=5frl6njincf5riojkuvt1efyq&st=qj5vl3dc&dl=0"
         default: ""
         required: true
         type: string
@@ -27,7 +27,7 @@ concurrency:
 
 jobs:
   build:
-    name: Build YTMusicUltimate
+    name: YTMusicUltimate
     runs-on: macos-latest
     permissions:
       contents: write
